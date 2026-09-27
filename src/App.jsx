@@ -11,8 +11,22 @@ console.log(one);
 console.log(number);
 console.log(a);
 
+if (a>10) {
+  console.log("a>10");
+  
+}else(
+  console.log("a<10")
+)
+///////////
 
- 
+const answer = true
+function b() {
+  console.log('answer is true');
+}
+function c() {
+  console.log('answer is false');
+}
+answer ? b() : c();
 }
 
 export default App
