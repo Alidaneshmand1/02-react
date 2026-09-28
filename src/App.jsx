@@ -6,7 +6,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import a from './new'
-
+import Quiz from './Quiz'
 function new1() {
   console.log("this is new");
   
@@ -84,29 +84,7 @@ function App(props) {
 //   </div>
 // )
 // return<div><h1><Users/></h1></div>
-
-const classes = [
-  {name : "html" , finished : true},
-  {name : "javascrip" , finished : false},
-  {name : "css" , finished : true},
-  {name : "bootstrap" , finished : false},
-  {name : "react" , finished : true},
-  {name : "python" , finished : false},
-
-
-];
-return (
-  <div>
-    {classes.map((all , index) => {
-     if (all.finished === true) {
-      return <h2>{all.name}</h2>
-     }
-    })}
-  </div>
-)
-
+return <div><h2><Quiz/></h2></div>
 
 }
-
-
 export default App
